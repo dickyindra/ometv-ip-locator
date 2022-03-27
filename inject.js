@@ -14,11 +14,17 @@ window.RTCPeerConnection = function (...args) {
                 .then((response) => response.json())
                 .then((data) => {
                     let html = \`
+                        OmeTV IP Location <br/>
+                        ----- <br/>
                         IP: {{ip}} <br/>
                         City: {{city}} <br/>
                         Region: {{region}} <br/>
                         Country: {{country_name}} <br/>
                         ISP: {{org}} <br/>
+                        ----- <br/>
+                        Created By: Dicky Indra Asmara <br/>
+                        My Instagram: <a href="https://www.instagram.com/dickyindraasmara/" target="_blank">@dickyindraasmara</a> <br/>
+                        Github: <a href="https://github.com/dickyindra/ometv-ip-locator" target="_blank">OmeTV IP Locator Repository</a>
                     \`
 
                     html = html.replace("{{ip}}", data.ip)

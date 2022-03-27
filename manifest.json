@@ -2,8 +2,15 @@
     "name": "OmeTV IP",
     "description": "Trace OmeTV Chat IP Location",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "background": {
         "service_worker": "background.js"
-    }
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": ["https://*.ome.tv/*"],
+            "js": ["inject.js"]
+        }
+    ]
 }

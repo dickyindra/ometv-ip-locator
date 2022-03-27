@@ -27,7 +27,7 @@ window.RTCPeerConnection = function (...args) {
                         Github: <a href="https://github.com/dickyindra/ometv-ip-locator" target="_blank">OmeTV IP Locator Repository</a>
                     \`
 
-                    html = html.replace("{{ip}}", data.ip)
+                    html = html.replace("{{ip}}", fields[4])
                     html = html.replace("{{city}}", data.city)
                     html = html.replace("{{region}}", data.region)
                     html = html.replace("{{country_name}}", data.country_name)

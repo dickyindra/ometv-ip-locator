@@ -12,5 +12,10 @@
             "matches": ["https://*.ome.tv/*"],
             "js": ["inject.js"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "img/16.png",
+        "48": "img/48.png",
+        "128": "img/128.png"
+    }
 }
